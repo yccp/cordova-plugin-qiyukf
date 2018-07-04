@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-qiyukf",
+  "version": "1.0.0",
+  "description": "七鱼客服cordova插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yu Chen",
+  "license": "ISC",
+  "cordova": {
+    "id": "cordova-plugin-qiyukf",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yccp/cordova-plugin-qiyukf.git"
+  },
+  "keywords": [
+    "cordova",
+    "umeng",
+    "qq",
+    "share",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "bugs": {
+    "url": "https://github.com/yccp/cordova-plugin-qiyukf/issues"
+  },
+  "homepage": "https://github.com/yccp/cordova-plugin-qiyukf#readme"
+}

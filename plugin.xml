@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-qiyukf" version="1.0.0">
+  <name>Qiyukf</name>
+  <description>Cordova Plugin for Qiyukf</description>
+  <license>ISC</license>
+  <keywords>cordova,customer,qiyukf</keywords>
+  <preference name="APP_NAME" />
+  <preference name="APP_KEY" />
+  <js-module src="www/Qiyukf.js" name="Qiyukf">
+    <clobbers target="Qiyukf" />
+  </js-module>
+  <platform name="ios">
+    <pod name="QIYU_iOS_SDK" />
+    <config-file target="config.xml" parent="/*">
+      <feature name="Qiyukf">
+        <param name="ios-package" value="Qiyukf" />
+        <param name="onload" value="true" />
+      </feature>
+      <preference name="APP_NAME" value="$APP_NAME" />
+      <preference name="APP_KEY" value="$APP_KEY" />
+    </config-file>
+    <header-file src="src/ios/Qiyukf.h" />
+    <source-file src="src/ios/Qiyukf.m" />
+  </platform>
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Qiyukf">
+        <param name="android-package" value="news.chen.yu.ionic.Qiyukf"/>
+        <param name="onload" value="true" />
+      </feature>
+      <preference name="APP_NAME" value="$APP_NAME" />
+      <preference name="APP_KEY" value="$APP_KEY" />
+    </config-file>
+    <framework src="src/android/Qiyukf.gradle" custom="true" type="gradleReference" />
+    <source-file src="src/android/Qiyukf.java" target-dir="src/news/chen/yu/ionic" />
+  </platform>
+</plugin>
