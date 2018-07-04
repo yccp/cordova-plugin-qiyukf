@@ -13,11 +13,11 @@ ionic cordova plugin add cordova-plugin-cocoapod-support
 ## 安装
 
 ```
-cordova plugin add cordova-plugin-qiyukf --variable IOS_APP_NAME=你的IOS_APP_NAME --variable IOS_APP_KEY=你的IOS_APP_KEY --variable ANDROID_APP_NAME=你的ANDROID_APP_NAME --variable ANDROID_APP_KEY=你的ANDROID_APP_KEY --save
+cordova plugin add cordova-plugin-qiyukf --variable APP_NAME=你的APP_NAME --variable APP_KEY=你的APP_KEY --save
 ```
 或
 ```
-ionic cordova plugin add cordova-plugin-qiyukf --variable IOS_APP_NAME=你的IOS_APP_NAME --variable IOS_APP_KEY=你的IOS_APP_KEY --variable ANDROID_APP_NAME=你的ANDROID_APP_NAME --variable ANDROID_APP_KEY=你的ANDROID_APP_KEY
+ionic cordova plugin add cordova-plugin-qiyukf --variable APP_NAME=你的APP_NAME --variable APP_KEY=你的APP_KEY
 ```
 
 ## 配置
