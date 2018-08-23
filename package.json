@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-qiyukf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "七鱼客服cordova插件",
   "main": "index.js",
   "scripts": {
