@@ -14,6 +14,7 @@ import org.json.JSONException;
 
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
 import com.nostra13.universalimageloader.core.download.ImageDownloader;
@@ -39,6 +40,7 @@ public class Qiyukf extends CordovaPlugin {
         super.initialize(cordova, webView);
         this.appKey = preferences.getString("app_key", "");
         this.appName = preferences.getString("app_name", "");
+        ImageLoader.getInstance().init(ImageLoaderConfiguration.createDefault(cordova.getActivity()));
         Unicorn.init(cordova.getActivity(), this.appKey, options(), new UnicornImageLoader() {
 
             @Nullable
